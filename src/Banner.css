@@ -1,0 +1,114 @@
+.banner {
+    padding: 0;
+    width: auto;
+    height: 47vw;
+    color: #fff;
+    position: relative;
+}
+
+.banner_contents {
+    padding: 0 3vw;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-bottom: 2vw;
+}
+
+.banner_title {
+    margin: 1vw 0;
+    font-size: 4vw;
+    font-weight: 800;
+    max-width: 70rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .25);
+}
+
+.banner_description {
+    margin: 1vw 0;
+    max-width: 40vw;
+    font-size: 1.5vw;
+    font-weight: 400;
+    line-height: 1.4;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .45);
+}
+
+.banner_button {
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    font-size: 2rem;
+    border-radius: 4px;
+    padding: .8vw 2vw;
+    margin: 0 1rem 0 0;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.banner_button:hover {
+    color: #000;
+    background-color: #e6e6e6;
+    transition: all 0.2s;
+}
+
+.banner--fadeBottom {
+    position: absolute;
+    bottom: 0;
+    height: 10rem;
+    width: 100%;
+    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, .61), #111);
+}
+
+@media (max-width: 775px) {
+    .banner_description {
+        font-size: 1.2rem;
+    }
+
+    .banner_contents {
+        height: 75%;
+    }
+
+    .banner_description--expanded {
+        max-width: 75vw;
+    }
+
+    .banner--fadeBottom {
+        height: 8rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner_description {
+        display: none;
+    }
+
+    .banner_contents {
+        padding-bottom: 2vw;
+    }
+
+    .banner_title {
+        font-size: 6vw;
+    }
+
+    .banner_button {
+        padding: 1.2vw 2.5vw;
+
+    }
+
+    .banner_button span {
+        font-size: 2.5vw;
+    }
+
+    .banner_button--icon {
+        font-size: 2vw;
+    }
+
+    .banner_button--more .banner_button--icon {
+        font-size: 3vw;
+    }
+
+    .banner--fadeBottom {
+        height: 7rem;
+    }
+}
